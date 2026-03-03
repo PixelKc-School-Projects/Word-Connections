@@ -1,0 +1,21 @@
+fruits: apple, banana, cherry, date
+colors: red, blue, green, yellow
+animals: dog, cat, bird, fish
+countries: usa, canada, mexico, brazil
+sports: basketball, football, soccer, tennis
+instruments: guitar, piano, drums, violin
+seasons: spring, summer, fall, winter
+planets: earth, mars, venus, jupiter
+vehicles: car, truck, bus, train
+beverages: coffee, tea, juice, soda
+vegetables: carrot, broccoli, spinach, lettuce
+shapes: circle, square, triangle, rectangle
+weather: rain, snow, wind, sun
+school_subjects: math, science, history, english
+clothing: shirt, pants, shoes, hat
+buildings: house, school, hospital, library
+oceans: pacific, atlantic, indian, arctic
+trees: oak, pine, maple, birch
+metals: gold, silver, copper, iron
+musical_genres: rock, pop, jazz, classical
+
