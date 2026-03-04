@@ -22,14 +22,15 @@ def load_categories(filename):
     # PROVIDED: Construct full path to the categories file
     file_path = os.path.join(dir_path, filename)
     
-    # STEP #1 (Week 21): Load Categories Dictionary
-    # TODO: Create an empty dictionary to store categories
-    # TODO: Open the file and read it line by line
-    # TODO: For each line, split on ':' to separate category name and words
-    # TODO: Split words on ',' to get a list of words
-    # TODO: Add the category and words to the dictionary
-    
-    pass
+    categories = {}
+
+    with open(file_path) as file:
+        for line in file:
+            category_list = line.split(': ')
+            category = category_list[0]
+            words = category_list[1].strip().split(', ')
+            categories[category] = words
+    return categories
 
 
 def create_word_lookup(categories_dict):
@@ -43,10 +44,12 @@ def create_word_lookup(categories_dict):
         dict: Dictionary mapping words to category names
               Example: {"apple": "fruits", "red": "colors", ...}
     """
-    # STEP #2 (Week 21): Create Word-to-Category Lookup
-    # TODO: Create an empty dictionary for the word lookup
-    # TODO: Iterate through categories_dict using .items()
-    # TODO: For each category and its words, add each word to the lookup dictionary
+    word_lookup = {}
+    for category, words in categories_dict.items():
+        for word in words:
+            word_lookup[word] = category
+    
+    return word_lookup
     
     pass
 
